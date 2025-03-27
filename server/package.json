@@ -14,16 +14,21 @@
   "license": "UNLICENSED",
   "type": "module",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "compression": "^1.8.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.13.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
     "@eslint/js": "^9.23.0",
     "@types/compression": "^1.7.5",
+    "babel-loader": "^10.0.0",
     "eslint": "^9.23.0",
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-prettier": "^5.2.5",

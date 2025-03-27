@@ -4,9 +4,16 @@ const ItemSchema = new Schema({
   name: {
     type: String,
     required: true,
+    trim: true,
   },
   description: {
     type: String,
+    required: true,
+  },
+  user: {
+    type: Schema.Types.ObjectId,
+    ref: 'User',
+    required: true,
   },
   date: {
     type: Date,
