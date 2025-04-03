@@ -30,14 +30,14 @@ app.use(express.static(path.join(import.meta.dirname, 'public'))); // Serve stat
 app.use(compression());
 
 // // Connect to MongoDB
-// connect(process.env.MONGO_URI)
-//   .then(() => console.log('MongoDB connected'))
-//   .catch((err) => console.log(err));
+connect(process.env.MONGO_URI)
+  .then(() => console.log('MongoDB connected'))
+  .catch((err) => console.log(err));
 
 // Define routes
 app.use('/api/items', itemRouter);
 app.use('/api/users', userRouter);
-app.use('/auth', authRouter);
+app.use('/api/auth', authRouter);
 
 // Basic route
 app.get('/', (req, res) => {
